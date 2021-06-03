@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+</head>
+
+<body style="background-color:black;">
+    <script>
+
+        function percentage() {
+
+            // program to check on how much is the `amount` from `total`
+
+
+            const total = prompt("Enter the total: ");
+            const amount = prompt("Enter the amount: ");
+
+            // ternary operator
+
+            const result = ((amount * 100) / total);
+
+            // display the result
+
+            if (result > 100 | result < 0) {
+                return "The total number is smaller as amount, please write a bigger total as amount. Press F5!";
+            }
+            return "Your percent is " + result + ". 0%<" + result + "%<100%";
+        }
+        console.log(percentage())
+
+    </script>
+    <h1 style="text-align: center;color: cadetblue;">Amazing!</h1>
+</body>
+
+
+</html>
