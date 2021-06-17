@@ -1,18 +1,39 @@
 // returns the smallest number from a and b
 // ex. (3,4) -> 3
-min(a, b);
+min=(a, b)=>
+{ if (a>b){
+    return b;
+}
+    else {
+        return a;
+    }
+};
+ console.log(min(5,7))
+
 
 // returns the largest number from a and b
 // ex. (3,4) -> 4
-max(a, b);
+max=(a, b)=>
+{if(a<b){
+    return b;
+}
+ else{
+     return a;
+ }
+};
+ console.log(max(13,27))
 
 // returns the sum of the three numbers
 // ex. (3,4,5) -> 12
-sum(a, b, c);
+sum=(a, b, c)=>
+a+b+c;
+console.log(sum(3,4,5))
 
 // returns the remainder from dividing number a with b
 // ex. (13, 4) -> 1
-modulo(a, b);
+modulo=(a, b)=>
+a%b;
+console.log(modulo(20,6))
 
 // returns the n-th fibbonacci number
 // ex. (5) -> 3 (the sequence being 0, 1, 1, 2, 3, 5, 8, 13, 21, ...)
