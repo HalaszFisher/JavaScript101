@@ -1,39 +1,5 @@
 // returns the smallest number from a and b
 // ex. (3,4) -> 3
-<<<<<<< HEAD:exercises12adi.js
-min=(a, b)=>
-{
-    if(a<b) {
-    return a;
-    }
-    else{
-    return b;
-}
-};
-console.log(min(8,7))
-
-// returns the largest number from a and b
-// ex. (3,4) -> 4
-max=(a, b)=>{
-    if(a>b) {
-        return a;
-    }
-    else{
-        return b;
-    }
-};
-console.log(max(7,8))
-
-// returns the sum of the three numbers
-// ex. (3,4,5) -> 12
-sum=(a, b, c)=> a+b+c;
-console.log(sum(1,1,7))
-
-// returns the remainder from dividing number a with b
-// ex. (13, 4) -> 1
-modulo=(a, b)=> a%b;
-    console.log(modulo(10,3))
-=======
 min = (a, b) => {
   if (a > b) {
     return b;
@@ -63,7 +29,6 @@ console.log(sum(3, 4, 5));
 // ex. (13, 4) -> 1
 modulo = (a, b) => a % b;
 console.log(modulo(20, 6));
->>>>>>> 719c353a50734d13bb24aad7113b2d300c58a478:exercises12.js
 
 // returns the n-th fibbonacci number
 // ex. (5) -> 3 (the sequence being 0, 1, 1, 2, 3, 5, 8, 13, 21, ...)
