@@ -1,38 +1,90 @@
 // returns the smallest number from a and b
 // ex. (3,4) -> 3
-min(a, b);
+min=(a, b)=>
+{
+    if(a<b) {
+    return a;
+    }
+    else{
+    return b;
+}
+};
+console.log(min(8,7))
 
 // returns the largest number from a and b
 // ex. (3,4) -> 4
-max(a, b);
+max=(a, b)=>{
+    if(a>b) {
+        return a;
+    }
+    else{
+        return b;
+    }
+};
+console.log(max(7,8))
 
 // returns the sum of the three numbers
 // ex. (3,4,5) -> 12
-sum(a, b, c);
+sum=(a, b, c)=> a+b+c;
+console.log(sum(1,1,7))
 
 // returns the remainder from dividing number a with b
 // ex. (13, 4) -> 1
-modulo(a, b);
+modulo=(a, b)=> a%b;
+    console.log(modulo(10,3))
 
 // returns the n-th fibbonacci number
 // ex. (5) -> 3 (the sequence being 0, 1, 1, 2, 3, 5, 8, 13, 21, ...)
-fibbonacci(n);
+fibbonacci=(n)=>
+{
+let n1=0,n2=1,nextTerm;
+console.log(n1);
+console.log(n2);
+nextTerm=n1+n2;
+while (nextTerm<=n){
+    console.log(nextTerm);
+    n1=n2;
+    n2=nextTerm;
+    nextTerm=n1+n2;
+}
+return nextTerm
+}
+console.log(fibbonacci(5))
 
 // returns the factorial of n
 // ex. (7) -> 5040
-factorial(n);
+factorial=(n)=>{
+    if(n<0)
+    return -1;
+    else if (n ==0)
+    return 1;
+    else{return (n* factorial(n-1));}
+};
+console.log(factorial(7))
 
 // returns a to the power of b
 // ex. (2,3) -> 8
-power(a, b);
+power=(a, b)=> a**b;
+console.log(power(2,3))
 
 // returns an array of number from "from" to "to"
 // ex. (4,9) -> [4,5,6,7,8,9]
-generateArray(from, to);
+generateArray=(from, to)=>{
+
+};
 
 // returns the smallest number from array
 // ex. ([2,3,6,3,8,9,3,5,1,7]) -> 1
-min(array);
+min=(array)=>{
+let minimumNumber=array[2,3,6,3,8,9,3,5,1,7];
+let counter=0;
+while(counter< array.length){
+minimumNumber=min(minimumNumber,array[counter]);
+    counter=counter+1;
+}
+return minimumNumber;
+};
+console.log(min([2,3,6,3,8,9,3,5,1,7]));
 
 // returns the largest number from array
 // ex. ([9,3,4,6,2,3,5,6,8,9]) -> 9
